@@ -1,13 +1,10 @@
-# Investigating Seach Algorithms In Game Setting
+# Investigating Search Algorithms In Game Setting
 
-The scope of this project included simulating a game of double-dominoes and testing various search algorithms, however, not much time went into the design so the code is not optimized.
+The scope of this project included simulating a game of double-dominoes and testing various search algorithins.
 
 For an in-depth analysis of gaming search algorithms check out "Multiplayer Games: Algorithms and Approaches, Sturtevant, 2003"
 
 --> https://webdocs.cs.ualberta.ca/~nathanst/papers/multiplayergamesthesis.pdf
-
-## Objective
-For this project, I simulated games of Double Dominoes and created three AIs to play against one another. Through this exercise, I learned about search algorithms and want to share that with you. 
 
 ## Key Challenges
 The first thing to consider when implementing a search algorithm in a game is the evaluation function. This function is used in many search algorithms and will return a value range based on the current state of the board. Essentially, the goal is to search a tree (every node layer is a turn and every branch a possible move) and find a path that reaches a node that has a good evaluation for that player - evaluation being a value that relates to winning chances. For this to work the same evaluation function needs to run when it's an opponent’s turn on the tree to determine the best possible scores for the opponent as well. 
